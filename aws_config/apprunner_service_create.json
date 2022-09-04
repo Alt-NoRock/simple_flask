@@ -1,0 +1,16 @@
+{
+    "ServiceName": "FlaskTest",
+    "SourceConfiguration": {
+        "AuthenticationConfiguration": {
+            "AccessRoleArn": "arn:aws:iam::<ID>:role/service-role/AppRunnerECRAccessRole"
+        },
+        "ImageRepository": {
+            "ImageIdentifier": "<ID>.dkr.ecr.ap-northeast-1.amazonaws.com/sample_flask:latest",
+            "ImageConfiguration": {
+                "Port": "5000"
+            },
+            "ImageRepositoryType": "ECR"
+        },
+        "AutoDeploymentsEnabled": false
+    }
+}

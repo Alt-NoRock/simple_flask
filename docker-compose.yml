@@ -1,0 +1,12 @@
+version: "3"
+services:
+  flask:
+    container_name: flask
+    build: .
+    ports:
+      - "5000:5000"
+    # volumes:
+    #   - ./src:/app/src
+    #   - ./Pipfile:/app/Pipfile
+    #   - ./log:/var/log/flask
+    # working_dir: /app
